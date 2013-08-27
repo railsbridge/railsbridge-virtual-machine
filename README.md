@@ -5,7 +5,7 @@
 This is a proposed new setup method for the Railsbridge Boston workshop. It
 could mean bye bye Xcode, RVM, rbenv, and Windows installfest headaches. 
 
-Set up all the software you need by following these steps:
+Set up all the software you need (except for the text editor) by following these steps:
 
 ## Step 1. 
 
