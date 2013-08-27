@@ -95,7 +95,7 @@ vagrant@precise32:~$
 
 ## Step 5. 
     
-    Do your stuff.
+Do your stuff.
     
 ## Step 6.
 
@@ -103,6 +103,8 @@ Logout and stop your machine with
 
     logout
     vagrant halt
+
+Here's some more info on [Vagrant commands](http://docs.vagrantup.com/v2/cli/index.html).
 
 These instructions will be refined later. This is just a first cut.
 
