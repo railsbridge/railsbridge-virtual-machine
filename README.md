@@ -31,6 +31,7 @@ Download the [Railsbridge Boston Virtual machine][vm] (579MB) with this command:
 Change directory into a workspace for your Railsbridge tutorial, and start
 your machine!
 
+    vagrant init railsbridgebos
     vagrant up
     vagrant ssh
 
