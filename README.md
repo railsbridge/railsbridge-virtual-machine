@@ -48,7 +48,7 @@ Stop your machine with
 These instructions will be refined later. This is just a first cut.
 
 
-## Future directions
+## Future improvements
 
 * Make a Torrent out of the Vagrant box.
 * Put all installers and VM on USB keys. Figure out space required.
