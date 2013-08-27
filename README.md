@@ -12,11 +12,11 @@ Set up all the software you need by following these steps:
 
 [vagrant]:http://downloads.vagrantup.com/tags/v1.2.7
 
-3. Download the [Railsbridge Boston Virtual machine][rbbvm] with this command:
+3. Download the [Railsbridge Boston Virtual machine][vm] with this command:
 
     vagrant box add railsbridgebos http://66.228.42.213/railsbridgebos.box
 
-[rbbvm]:vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+[vm]:http://66.228.42.213/railsbridgebos.box
 
 4. Change directory into a workspace for your Railsbridge tutorial, and start
    your machine!
