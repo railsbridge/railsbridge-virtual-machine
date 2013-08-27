@@ -1,6 +1,6 @@
 # The Railsbridge Boston Virtual Machine
 
-![img]:(https://raw.github.com/railsbridge-boston/railsbridge-virtual-machine/master/vm.png)
+![img](https://raw.github.com/railsbridge-boston/railsbridge-virtual-machine/master/vm.png)
 
 This is a new setup method for Railsbridge Boston workshop.
 
