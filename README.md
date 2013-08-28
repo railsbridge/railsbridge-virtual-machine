@@ -21,7 +21,7 @@ Download and install [Vagrant][vagrant]
 
 ## Step 3. 
 
-Download the [Railsbridge Boston Virtual Machine][vm] (579MB) with this command:
+Download the Railsbridge Boston Virtual Machine (579MB) with this command:
 
     vagrant box add railsbridgebos http://66.228.42.213/railsbridgebos.box
 
