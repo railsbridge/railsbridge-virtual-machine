@@ -23,7 +23,13 @@ Download and install [Vagrant][vagrant]
 
 Download the Railsbridge Boston Virtual Machine (579MB) with this command:
 
-    vagrant box add railsbridgebos http://66.228.42.213/railsbridgebos.box
+For Rails 3.2 and Ruby 1.9.3:
+
+    vagrant box add railsbridgebos http://66.228.42.213/railsbridgevm.3.2.box
+
+For Rails 4.0 and Ruby 2.0:
+
+    vagrant box add railsbridgebos http://66.228.42.213/railsbridgevm.4.0.box
 
 [vm]:http://66.228.42.213/railsbridgebos.box
 
