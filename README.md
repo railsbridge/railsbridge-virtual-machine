@@ -113,6 +113,10 @@ Here's some more info on [Vagrant commands](http://docs.vagrantup.com/v2/cli/ind
 
 These instructions will be refined later. This is just a first cut.
 
+## Image Digests
+
+SHA1 railsbridgevm-3.2.box = bd347fd3ca823bc27b6716fcab344816b35b6bdd
+SHA1 railsbridgevm-4.0.box = 293c4e052827bbbe265ba3b2e5436d67d510bb2e
 
 ## Future improvements
 
