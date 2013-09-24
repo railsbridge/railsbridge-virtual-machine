@@ -153,7 +153,8 @@ these instructions:
 6. Create the new package with this command. NAME is the name of the box
    you're creating, e.g. railsbridgevm-3.2.box:
    
-    vagrant package --output NAME --vagrantfile Vagrantfile
+      vagrant package --output NAME --vagrantfile Vagrantfile
+
 
 
 
