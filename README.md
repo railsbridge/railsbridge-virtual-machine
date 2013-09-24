@@ -131,8 +131,10 @@ these instructions:
 
 3. Zero out all the unused disk space in the VM with these commands:
 
+    ```
     dd if=/dev/zero of=/EMPTY bs=1M
     rm -f /EMPTY
+    ```
 
 4. Exit the vagrant shell and vagrant halt it.
 
