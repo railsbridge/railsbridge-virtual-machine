@@ -142,7 +142,7 @@ these instructions:
 
     ```
     Vagrant.configure("2") do |config|
-      config.vm.box = "precise32"
+      config.vm.box = "railsbridgevm-3.2"  # the name of the base box
       config.vm.network :forwarded_port, guest: 3000, host: 3000
       # Share an additional folder to the guest VM. The first argument is
       # the path on the host to the actual folder. The second argument is
