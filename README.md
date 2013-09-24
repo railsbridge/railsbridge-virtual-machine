@@ -118,6 +118,46 @@ These instructions will be refined later. This is just a first cut.
 * SHA1 railsbridgevm-3.2.box = bd347fd3ca823bc27b6716fcab344816b35b6bdd
 * SHA1 railsbridgevm-4.0.box = 293c4e052827bbbe265ba3b2e5436d67d510bb2e
 
+
+## How to make a new Railsbridge VM
+
+You can tweak an existing VM and repackage it into a new box. Follow
+these instructions:
+
+1. Follow all the above steps, but then customize the environment in the
+   Vagrant shell to change and customize the VM.
+
+2. Edit the /etc/motd which is shown right after vagrant ssh login.
+
+3. Zero out all the unused disk space in the VM with these commands:
+
+    dd if=/dev/zero of=/EMPTY bs=1M
+    rm -f /EMPTY
+
+4. Exit the vagrant shell and vagrant halt it.
+
+5. Make sure there is a Vagrantfile in the directory with this content:
+
+    ```
+    Vagrant.configure("2") do |config|
+      config.vm.box = "precise32"
+      config.vm.network :forwarded_port, guest: 3000, host: 3000
+      # Share an additional folder to the guest VM. The first argument is
+      # the path on the host to the actual folder. The second argument is
+      # the path on the guest to mount the folder. And the optional third
+      # argument is a set of non-required options.
+      # config.vm.synced_folder "../data", "/vagrant_data"
+    end
+    ```
+
+6. Create the new package with this command. NAME is the name of the box
+   you're creating, e.g. railsbridgevm-3.2.box:
+   
+    vagrant package --output NAME --vagrantfile Vagrantfile
+
+
+
+
 ## Future improvements
 
 * Put the Railsbridge Boston Virtual Machine download on S3 and/or torrents. Right now it's on a slow server for downloading.
