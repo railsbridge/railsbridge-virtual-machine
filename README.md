@@ -26,8 +26,9 @@ Download and install [Vagrant][vagrant]
 
 ## Step 3.
 
-Open a command prompt. See the [Using the Command Prompt Lab]http://www.railsbridgeboston.org/installfest/command_prompt , for a refresher on how to start the command prompt. 
+Open a command prompt. See the [Using the Command Prompt Lab][command_prompt] , for a refresher on how to start the command prompt. 
 
+[command_prompt]:http://www.railsbridgeboston.org/installfest/command_prompt
 Download the Railsbridge Boston Virtual Machine with this command:
 
 For Rails 3.2 and Ruby 1.9.3:
@@ -61,7 +62,7 @@ Move into that directory:
 
     cd workspace
 
-This directory will be shared between the virtual machine and your computer. Save all your work in the hands-on exercises here so they can be run in the virtual machine. 
+This directory will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both computers can see. Do all your work in the hands-on exercises here so they can be run in the virtual machine. 
 
 Run these commands:
 
