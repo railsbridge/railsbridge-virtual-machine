@@ -47,8 +47,7 @@ Note for organizers: to prevent network overload, it's best to download the box 
 
 ## Step 4. 
 
-Change directory into a workspace for your Railsbridge tutorial, and start
-your machine!
+Create a workspace directory for your Railsbridge tutorial.
 
 Go to your home directory:
 
@@ -62,13 +61,16 @@ Move into that directory:
 
     cd workspace
 
-This directory will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both computers can see. Do all your work in the hands-on exercises here so they can be run in the virtual machine. 
+This directory will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both computers can see. Save all your work in the hands-on exercises here so they can be run in the virtual machine. 
 
-Run these commands:
+## Step 5.
+
+Create and start your machine!
+
+This is a one-time step to create the virtual machine for the workshop.
 
     vagrant init railsbridgebos
-    vagrant up
-    vagrant ssh
+
 
 Here is what you should see (approximately):
 
@@ -78,6 +80,14 @@ A `Vagrantfile` has been placed in this directory. You are now
 ready to `vagrant up` your first virtual environment! Please read
 the comments in the Vagrantfile as well as documentation on
 `vagrantup.com` for more information on using Vagrant.
+```
+
+Start the virtual machine:
+
+    vagrant up
+
+It will do something like this:
+```
 choi@mini rbb]$ vagrant up
 Bringing machine 'default' up with 'virtualbox' provider...
 [default] Importing base box 'railsbridgebos'...
@@ -96,6 +106,14 @@ Bringing machine 'default' up with 'virtualbox' provider...
 [default] Configuring and enabling network interfaces...
 [default] Mounting shared folders...
 [default] -- /vagrant
+```
+
+Connect to the virtual machine and start a command prompt: 
+
+    vagrant ssh
+
+You will see:
+```
 [choi@mini rbb]$ vagrant ssh
 Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
 
@@ -126,12 +144,17 @@ Last login: Tue Aug 27 00:38:27 2013 from 10.0.2.2
 vagrant@precise32:~$ 
 ```
 
+We will walk through creating an SSH key, configuring git, and creating a Heroku account in the workshop.  They are one-time steps.
 
-## Step 5. 
+Run 'vagrant up' every time you start the virtual machine.
+
+Run 'vagrant ssh' every time you connect to the virtual machine.
+
+## Step 6. 
     
-Do your stuff.
+Do the workshop exercises. 
     
-## Step 6.
+## Step 7.
 
 Logout and stop your machine with
 
@@ -191,7 +214,4 @@ these instructions:
 * Put the Railsbridge Boston Virtual Machine download on S3 and/or torrents. Right now it's on a slow server for downloading.
 * Put all installers and VM on USB keys. Figure out total space required.
 * Test on all likely laptop models and operating systems. AMD CPUs may be an edge case.
-
-
-
 
