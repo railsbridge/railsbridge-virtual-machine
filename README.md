@@ -5,6 +5,11 @@
 This is a proposed new setup method for the Railsbridge Boston workshop. It
 could mean bye bye Xcode, RVM, rbenv, and Windows installfest headaches. 
 
+Note for workshop participants:
+
+The virtual machine creates a "computer within your computer", fully loaded with the software you need to run Ruby and Rails programs, plus the tools to deploy it on the Internet with Heroku and save changes in Git source control.
+
+
 Set up all the software you need (except for the text editor) by following these steps:
 
 ## Step 1. 
@@ -19,7 +24,9 @@ Download and install [Vagrant][vagrant]
 
 [vagrant]:http://downloads.vagrantup.com/tags/v1.2.7
 
-## Step 3. 
+## Step 3.
+
+Open a command prompt. See the [Using the Command Prompt Lab]http://www.railsbridgeboston.org/installfest/command_prompt , for a refresher on how to start the command prompt. 
 
 Download the Railsbridge Boston Virtual Machine with this command:
 
@@ -32,10 +39,31 @@ For Rails 4.0 and Ruby 2.0:
 
     vagrant box add railsbridgebos http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-4.0.box
 
+Note for organizers: to prevent network overload, it's best to download the box image ahead of time and install from the file.   Point a web browser to the box URL and save it.  To install, use the 'file://' prefix, followed by the path to the file.
+
+    vagrant box add railsbridgebos file://railsbridgevm-3.2.box
+
+
 ## Step 4. 
 
 Change directory into a workspace for your Railsbridge tutorial, and start
 your machine!
+
+Go to your home directory:
+
+    cd ~
+
+Make a new directory for the workshop:
+
+    mkdir workspace
+
+Move into that directory:
+
+    cd workspace
+
+This directory will be shared between the virtual machine and your computer. Save all your work in the hands-on exercises here so they can be run in the virtual machine. 
+
+Run these commands:
 
     vagrant init railsbridgebos
     vagrant up
