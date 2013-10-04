@@ -33,7 +33,7 @@ Download the Railsbridge Boston Virtual Machine with this command:
 
 For Rails 3.2 and Ruby 1.9.3:
 
-    vagrant box add railsbridgebos http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-3.2-b.box
+    vagrant box add railsbridgebos http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-3.2-c.box
 
 
 For Rails 4.0 and Ruby 2.0:
