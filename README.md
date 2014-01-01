@@ -12,15 +12,17 @@ The virtual machine creates a "computer within your computer", fully loaded with
 
 Set up all the software you need (except for the text editor) by following these steps:
 
+Note: The current RailsBridge VM has been verified with Vagrant 1.2.7, which requires VirtualBox 4.2 .
+
 ## Step 1. 
 
-Download and install [VirtualBox][vbox]
+Download and install [VirtualBox 4.2][vbox] . 
 
-[vbox]:https://www.virtualbox.org/wiki/Downloads
+[vbox]:https://www.virtualbox.org/wiki/Download_Old_Builds_4_2
 
 ## Step 2. 
 
-Download and install [Vagrant][vagrant]
+Download and install [Vagrant 1.2.7][vagrant]
 
 [vagrant]:http://downloads.vagrantup.com/tags/v1.2.7
 
