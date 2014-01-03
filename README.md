@@ -2,13 +2,22 @@
 
 ![img](https://raw.github.com/railsbridge-boston/railsbridge-virtual-machine/master/vm.png)
 
-This is a proposed new setup method for the Railsbridge Boston workshop. It
-could mean bye bye Xcode, RVM, rbenv, and Windows installfest headaches. 
+The Railsbridge Virtual Machine simplifies and standardizes the set up process
+for Railsbridge introductory workshops. This method works on many [guest
+OSes](https://www.virtualbox.org/wiki/Guest_OSes). 
+
+The Railsbridge VM provides a faster and more reliable way to set up different
+computers for Railsbridge. The manual alternative involves installing Xcode,
+RVM/rbenv/chruby, etc. manually. This manual process is slower, more
+bandwidth-intensive, and more error-prone.  And unlike
+[RailsInstaller](http://railsinstaller.org/en), the Railsbridge Virtual Machine
+can be tweaked to support the latest version of Rails.
 
 Note for workshop participants:
 
-The virtual machine creates a "computer within your computer", fully loaded with the software you need to run Ruby and Rails programs, plus the tools to deploy it on the Internet with Heroku and save changes in Git source control.
-
+The virtual machine creates a "computer within your computer", fully loaded
+with the software you need to run Ruby and Rails programs, plus the tools to
+deploy it on the Internet with Heroku and save changes in Git source control.
 
 Set up all the software you need (except for the text editor) by following these steps:
 
@@ -208,6 +217,10 @@ these instructions:
    ```
 
 
+## Sorry Chromebook users
+
+Chromebooks are not supported. Chromebook users might want to use
+[Nitrous.IO](http://nitrous.io/) for the Railsbridge workshop.
 
 
 
@@ -216,4 +229,6 @@ these instructions:
 * Put the Railsbridge Boston Virtual Machine download on S3 and/or torrents. Right now it's on a slow server for downloading.
 * Put all installers and VM on USB keys. Figure out total space required.
 * Test on all likely laptop models and operating systems. AMD CPUs may be an edge case.
+
+
 
