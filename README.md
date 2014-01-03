@@ -224,11 +224,5 @@ Chromebooks are not supported. Chromebook users might want to use
 
 
 
-## Future improvements
-
-* Put the Railsbridge Boston Virtual Machine download on S3 and/or torrents. Right now it's on a slow server for downloading.
-* Put all installers and VM on USB keys. Figure out total space required.
-* Test on all likely laptop models and operating systems. AMD CPUs may be an edge case.
-
 
 
