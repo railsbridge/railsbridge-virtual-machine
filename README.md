@@ -40,7 +40,7 @@ For Rails 3.2 and Ruby 1.9.3:
 
 For Rails 4.0 and Ruby 2.0:
 
-    vagrant box add railsbridge http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-4.0.box
+    vagrant box add railsbridgebox http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-4.0.box
 
 Note for organizers: to prevent network overload, it's best to download the box image ahead of time and install from the file.   Point a web browser to the box URL and save it.  To install, use the 'file://' prefix, followed by the path to the file.
 
