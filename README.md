@@ -35,16 +35,16 @@ Download the Railsbridge Boston Virtual Machine with this command:
 
 For Rails 3.2 and Ruby 1.9.3:
 
-    vagrant box add railsbridgebos http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-3.2-c.box
+    vagrant box add railsbridgebox http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-3.2-c.box
 
 
 For Rails 4.0 and Ruby 2.0:
 
-    vagrant box add railsbridgebos http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-4.0.box
+    vagrant box add railsbridge http://s3.amazonaws.com/railsbridgeboston/railsbridgevm-4.0.box
 
 Note for organizers: to prevent network overload, it's best to download the box image ahead of time and install from the file.   Point a web browser to the box URL and save it.  To install, use the 'file://' prefix, followed by the path to the file.
 
-    vagrant box add railsbridgebos file://railsbridgevm-4.0.box
+    vagrant box add railsbridgebox file://railsbridgevm-4.0.box
 
 
 ## Step 4. 
@@ -71,13 +71,13 @@ Create and start your machine!
 
 This is a one-time step to create the virtual machine for the workshop.
 
-    vagrant init railsbridgebos
+    vagrant init railsbridgebox
 
 
 Here is what you should see (approximately):
 
 ```
-[choi@mini rbb]$ vagrant init railsbridgebos
+[choi@mini rbb]$ vagrant init railsbridgebox
 A `Vagrantfile` has been placed in this directory. You are now
 ready to `vagrant up` your first virtual environment! Please read
 the comments in the Vagrantfile as well as documentation on
@@ -92,7 +92,7 @@ It will do something like this:
 ```
 choi@mini rbb]$ vagrant up
 Bringing machine 'default' up with 'virtualbox' provider...
-[default] Importing base box 'railsbridgebos'...
+[default] Importing base box 'railsbridgebox'...
 [default] Matching MAC address for NAT networking...
 [default] Setting the name of the VM...
 [default] Clearing any previously set forwarded ports...
