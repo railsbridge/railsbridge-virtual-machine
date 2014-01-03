@@ -1,4 +1,4 @@
-# The Railsbridge Boston Virtual Machine
+# The Railsbridge Virtual Machine
 
 ![img](https://raw.github.com/railsbridge-boston/railsbridge-virtual-machine/master/vm.png)
 
