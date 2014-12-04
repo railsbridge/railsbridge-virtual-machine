@@ -2,6 +2,12 @@
 
 ![img](https://raw.github.com/railsbridge-boston/railsbridge-virtual-machine/master/vm.png)
 
+## Deprecated
+
+The new VM is at https://github.com/railsbridge-boston/railsbridge-vm
+
+## Old README continues:
+
 The Railsbridge Virtual Machine simplifies and standardizes the set up process
 for Railsbridge introductory workshops. This method works on many [guest
 OSes](https://www.virtualbox.org/wiki/Guest_OSes). 
