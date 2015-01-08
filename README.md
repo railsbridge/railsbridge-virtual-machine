@@ -198,16 +198,18 @@ these instructions:
 
 2. Edit the /etc/motd which is shown right after vagrant ssh login.
 
-3. Zero out all the unused disk space in the VM with these commands:
+3. Edit or create ~/CHANGELOG.txt to describe your changes.  This will leave a history so your VM users can understand how this image is different from the baseline distribution.
+
+4. Zero out all the unused disk space in the VM with these commands:
 
     ```
     dd if=/dev/zero of=/EMPTY bs=1M
     rm -f /EMPTY
     ```
+    
+5. Exit the vagrant shell and vagrant halt it.
 
-4. Exit the vagrant shell and vagrant halt it.
-
-5. Make sure there is a Vagrantfile in the directory with this content:
+6. Make sure there is a Vagrantfile in the directory with this content:
 
     ```
     Vagrant.configure("2") do |config|
@@ -215,7 +217,7 @@ these instructions:
     end
     ```
 
-6. Create the new package with this command. NAME is the name of the box
+7. Create the new package with this command. NAME is the name of the box
    you're creating, e.g. railsbridgevm-3.2.box:
    
    ```
